@@ -1,0 +1,7 @@
+interface:
+  display_name: "Noisy Reader 📖"
+  short_description: "Hand noisy reads to a cheap model and keep a cited answer"
+  default_prompt: "Use $noisy-reader to answer one question from this log or dump without reading it into context."
+
+policy:
+  allow_implicit_invocation: true

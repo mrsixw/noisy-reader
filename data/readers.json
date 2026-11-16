@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "updated": "2026-11-16",
+  "sources": [
+    "claude -p --model haiku --effort low (verified 2026-11-16)",
+    "copilot --model probe (CLI 1.0.112, verified 2026-11-16: claude-haiku-5.5, claude-haiku-4.5, gemini-3.8-flash and gpt-6-luna served)",
+    "codex exec -m gpt-6-luna -c model_reasoning_effort=low (verified 2026-11-16)"
+  ],
+  "routes": [
+    {
+      "tool": "claude",
+      "family": "anthropic",
+      "models": [
+        {
+          "id": "haiku",
+          "effort": "low"
+        }
+      ]
+    },
+    {
+      "tool": "copilot",
+      "family": "anthropic",
+      "models": [
+        {
+          "id": "claude-haiku-5.5"
+        },
+        {
+          "id": "claude-haiku-4.5"
+        }
+      ]
+    },
+    {
+      "tool": "copilot",
+      "family": "google",
+      "models": [
+        {
+          "id": "gemini-3.8-flash"
+        }
+      ]
+    },
+    {
+      "tool": "codex",
+      "family": "openai",
+      "models": [
+        {
+          "id": "gpt-6-luna",
+          "effort": "low"
+        },
+        {
+          "id": "gpt-5.6-luna",
+          "effort": "low"
+        },
+        {
+          "id": null,
+          "effort": "low"
+        }
+      ]
+    },
+    {
+      "tool": "copilot",
+      "family": "openai",
+      "models": [
+        {
+          "id": "gpt-6-luna"
+        }
+      ]
+    }
+  ]
+}
