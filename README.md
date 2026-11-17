@@ -67,6 +67,10 @@ python3 scripts/noisy_reader.py --check
 Models live in [`data/readers.json`](data/readers.json). Keep a superseded
 model in its route as a fallback rather than deleting it.
 
+Do not add xAI Grok models, even where a CLI such as Copilot offers them. The
+maintainer strongly prefers other families, so the catalogue leaves Grok out
+on purpose. A test already checks the catalogue for it.
+
 ## Credits
 
 Adapted from Ali Abdelhamid's noisy-reader brief (MIT), with routing that
